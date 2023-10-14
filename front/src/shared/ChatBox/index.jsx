@@ -15,7 +15,6 @@ const ChatBox = () => {
    const {recipientUser} = useFetchRecipientUser(currentChat, user, );
    const [textMessage, setTextMessage] = useState('');
 
-   console.log('text', recipientUser);
 
    if (!recipientUser){
       return (
@@ -29,9 +28,6 @@ const ChatBox = () => {
          <p>Loading Chat...</p>
       );
    }
-
-
-   console.log('res', recipientUser);
 
 
    return(

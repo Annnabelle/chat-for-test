@@ -18,7 +18,6 @@ const NavBar = () => {
                     </div>
                     <div className="registered-as">
                       {user && <p className='registered'>Logged in chat as {user?.name}</p>}
-                      {console.log(user?.name)}
                     </div>
                     <div className='nav'>
                         <div className="stack">
