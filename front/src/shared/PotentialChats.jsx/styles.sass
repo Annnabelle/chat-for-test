@@ -1,0 +1,27 @@
+.potential
+    display: flex
+    flex-direction: row
+    column-gap: 12px
+    .single-user
+        display: flex
+        justify-content: space-between
+        border: 1px solid var(--yellow)
+        border-radius: 4px
+        width: 100px
+        text-align: center
+        padding: 8px 10px
+        cursor: pointer
+        transition: all 0.5s ease-in
+        &:hover
+            background: var(--yellow)
+            color: var(--main-white)
+        .online-user
+            width: 8px
+            height: 8px
+            border-radius: 50%
+            background: var(--green)
+        .offline-user
+            width: 8px
+            height: 8px
+            border-radius: 50%
+            background: var(--gray)
